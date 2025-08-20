@@ -20,7 +20,8 @@ body {
 }   
 
 #board {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(7, 60px);
     gap: 8px;
     margin: 12px 0; 
 }
@@ -48,5 +49,13 @@ body {
     width: 40px;
     height: 40px;
     border-radius: 50%;
+    background: transparent;
+}
+
+.piece {
     background: rgb(131, 12, 101);
+}
+
+.invalid{
+    border: transparent;
 }
